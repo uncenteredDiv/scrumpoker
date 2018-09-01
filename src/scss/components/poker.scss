@@ -1,0 +1,19 @@
+.c-poker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    height: 100%;
+    padding: 1rem;
+}
+
+.c-poker-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #fff;
+    border-radius: 0.75rem;
+
+    font-size: 2rem;
+}
