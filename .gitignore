@@ -1,0 +1,23 @@
+/.idea/*
+/logs/*
+/_.htaccess
+/.htaccess
+/.ftpconfig
+/index.php
+.editorconfig
+ChangeLog
+INSTALL.md
+LICENSE.txt
+README.md
+composer.json
+*.db
+.DS_STORE
+.DS_Store
+
+# Package manager folders
+bower_components
+node_modules
+
+# Other
+*.xd
+_icons
