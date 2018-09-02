@@ -19,13 +19,13 @@
     border: 2px solid #fff;
     border-radius: 0.75rem;
 
-    font-size: 10vw;
+    font-size: 5rem;
     line-height: 1;
 
     cursor: pointer;
 
     svg {
-        width: 10vw;
+        width: 5rem;
         height: auto;
     }
 }
@@ -64,6 +64,8 @@
 
     transform-style: preserve-3d;
     transition: transform 1s ease-in-out;
+
+    cursor: pointer;
 
     .is-flipped & {
         transform: rotateY(180deg);
