@@ -1,6 +1,6 @@
 var cacheName = 'scrumpoker:0001';
 var cacheFiles = [
-    '/',
+    '/scrumpoker/',
     '/scrumpoker/index.html',
     '/scrumpoker/css/main.css',
     '/scrumpoker/css/components/poker.css',
