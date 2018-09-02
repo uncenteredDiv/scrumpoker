@@ -1,4 +1,5 @@
 .c-poker {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
@@ -10,7 +11,74 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   border: 2px solid #fff;
   border-radius: 0.75rem;
-  font-size: 2rem;
+  font-size: 10vw;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.c-poker-card svg {
+  width: 10vw;
+  height: auto;
+}
+
+.c-poker-hovercard__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  background: linear-gradient(#8E2DE2, #4A00E0);
+  border: 2px solid #fff;
+  border-radius: 0.75rem;
+  font-size: 50vw;
+  line-height: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.c-poker-hovercard__wrapper.is-visible {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.c-poker-hovercard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.is-flipped .c-poker-hovercard {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.c-poker-card__front,
+.c-poker-card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-poker-card__back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
