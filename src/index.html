@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
 
     <title>Scrumpoker</title>
 
-    <link rel="stylesheet" href="Css/main.css">
-    <link rel="stylesheet" href="Css/components/poker.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/poker.css">
 </head>
 <body class="b-page">
 <header class="b-header">
@@ -78,6 +79,17 @@
     &copy; 2018 by Pixelschubser | <a href="https://gitlab.com/pixelschubser/scrumpoker" target="_blank">Gitlab</a>
 </footer>
 
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+                console.log('Service Worker registration successful with scope: ', registration.scope);
+            }).catch(function(err) {
+                console.log('Service Worker registration failed: ', err);
+            });
+        });
+    }
+</script>
 <script src="js/poker.js"></script>
 </body>
 </html>
