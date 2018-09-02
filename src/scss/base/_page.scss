@@ -2,7 +2,10 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
 
+    max-width: 48rem;
     min-height: 100vh;
+
+    margin: 0 auto;
 
     background: linear-gradient(#8E2DE2, #4A00E0);
     background-repeat: no-repeat;

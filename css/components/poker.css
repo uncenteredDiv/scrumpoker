@@ -14,13 +14,13 @@
   padding: 1rem;
   border: 2px solid #fff;
   border-radius: 0.75rem;
-  font-size: 10vw;
+  font-size: 5rem;
   line-height: 1;
   cursor: pointer;
 }
 
 .c-poker-card svg {
-  width: 10vw;
+  width: 5rem;
   height: auto;
 }
 
