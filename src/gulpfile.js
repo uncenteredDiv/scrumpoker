@@ -5,7 +5,7 @@ var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
 var config = {
 	'src': '',
-	'dest': '../build/',
+	'dest': '../',
 	'minify': false,
 	'sourcemaps': false
 };
