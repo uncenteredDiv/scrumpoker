@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
 
     <title>Scrumpoker</title>
 
@@ -76,13 +76,13 @@
     </div>
 </div>
 <footer class="b-footer">
-    &copy; 2018 by Pixelschubser | <a href="https://gitlab.com/pixelschubser/scrumpoker" target="_blank">Gitlab</a>
+    &copy; 2018 by Pixelschubser | <a href="https://github.com/unterweltler/scrumpoker" target="_blank">Github</a>
 </footer>
 
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+            navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
                 console.log('Service Worker registration successful with scope: ', registration.scope);
             }).catch(function(err) {
                 console.log('Service Worker registration failed: ', err);
