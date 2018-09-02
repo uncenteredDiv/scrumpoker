@@ -1,10 +1,10 @@
 var cacheName = 'scrumpoker:0001';
 var cacheFiles = [
     '/',
-    'index.html',
-    'css/main.css',
-    'css/components/poker.css',
-    'js/poker.js'
+    '/scrumpoker/index.html',
+    '/scrumpoker/css/main.css',
+    '/scrumpoker/css/components/poker.css',
+    '/scrumpoker/js/poker.js'
 ];
 
 self.addEventListener('install', function(event) {
