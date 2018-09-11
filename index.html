@@ -50,12 +50,16 @@
                 </div>
             </div>
         </div>
+        <footer class="b-footer">&copy; Pixelschubser | <a href="https://github.com/unterweltler/scrumpoker"
+            target="_blank">Github</a>
+
+        </footer>
         <script>
             if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
                         console.log('Service Worker registration successful with scope: ', registration.scope);
-                    }).catch(function(err) {
+                    }).catch(function (err) {
                         console.log('Service Worker registration failed: ', err);
                     });
                 });
