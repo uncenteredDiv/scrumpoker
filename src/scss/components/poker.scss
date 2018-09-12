@@ -19,13 +19,15 @@
     border: 2px solid #fff;
     border-radius: 0.75rem;
 
-    font-size: 10vw;
+    font-size: 2rem;
     line-height: 1;
 
     cursor: pointer;
 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     svg {
-        width: 10vw;
+        width: 2rem;
         height: auto;
     }
 }
@@ -44,11 +46,16 @@
     border: 2px solid #fff;
     border-radius: 0.75rem;
 
-    font-size: 50vw;
+    font-size: 10rem;
     line-height: 1;
 
     transform: scale(0);
     transition: transform 0.3s ease;
+
+    svg {
+        width: 10rem;
+        height: auto;
+    }
 
     &.is-visible {
         transform: scale(1);
@@ -67,6 +74,8 @@
 
     cursor: pointer;
 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
     .is-flipped & {
         transform: rotateY(180deg);
     }
@@ -78,6 +87,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    transform: rotateZ(0);
 
     display: flex;
     justify-content: center;
